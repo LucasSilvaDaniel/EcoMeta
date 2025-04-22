@@ -1,0 +1,811 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-color: green;
+}
+
+html {
+    width: 100%;
+    overflow-x: hidden;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.aa {
+    width: 100px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.limonadaImg {
+    width: 50px;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(255, 255, 0, 0.808);
+}
+
+a:hover {
+    color: #019d4f;
+}
+
+.inicio {
+    color: rgba(255, 255, 0, 0.808);
+    font-weight: 600;
+    font-size: 23px;
+}
+
+.botoes {
+    color: white;
+    font-weight: 600;
+    font-size: 23px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.botoes:hover {
+    color: rgba(255, 255, 0, 0.808);
+}
+
+.grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.preservacaoFoto {
+    width: 100%;
+    height: 100vh;
+    display: block;
+}
+
+.ftPreservacao {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 100vh;
+    display: block;
+}
+
+.texto-sobre-imagem {
+    position: absolute;
+    top: 5%; 
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+}
+.corzinha {
+    background-color: rgba(0, 0, 0, 0.432);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.cursor {
+    width: 25px;
+    height: auto;
+}
+
+.cursorSaibaMais:hover {
+    background-color: rgba(255, 255, 0, 0.808);
+    color: rgb(16, 168, 16);
+    transform: scale(1.1);
+    transition: transform 1s ease;
+}
+
+.linhaAmarela {
+    margin-top: 25px;
+    margin-left: 20px;
+    width: 950px;
+    height: 30px;
+}
+
+.divNossosProjetos {
+    display: flex;
+    flex-direction: row;
+    margin-top: 70px;
+}
+
+.nossosProjetos {
+    color: white;
+    font-weight: 1000;
+    font-size: 25px;
+}
+
+.predio {
+    width: 250px;
+    height: auto;
+}
+
+.divPredios {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.predio1,
+.predio2,
+.predio3,
+.predio4 {
+    background-color: #ffc100;
+    transition: transform 1s ease;
+}
+
+.predio1:hover,
+.predio2:hover,
+.predio3:hover,
+.predio4:hover {
+    transform: scale(1.1);
+}
+
+.descricaoFoto,
+.descricaoFoto2,
+.descricaoFoto3,
+.descricaoFoto4 {
+    color: #019d4f;
+    font-weight: 1000;
+    font-size: 25px;
+    text-align: center;
+    height: 3px;
+}
+
+.descricaoFoto3 {
+    font-size: 18px;
+    margin-top: 40px;
+}
+
+.descricaoFoto4 {
+    font-size: 18px;
+}
+
+.saibaMaisPredios,
+.botaoSaibaMais {
+    color: #ffc100;
+    border-color: #019d4f;
+    font-weight: 800;
+    background-color: #019d4f;
+    border: #019d4f solid 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.divSaibaMaisPredios {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.linhaAmarelaContato {
+    margin-top: 25px;
+    margin-left: 20px;
+    width: 1035px;
+    height: 30px;
+}
+
+.enderecoAmarelo {
+    color: #ffc100;
+    font-weight: 1000;
+    font-size: 25px;
+    margin-left: 80px;
+    width: 370px;
+    height: auto;
+}
+
+.enderecoVerde {
+    color: #019d4f;
+    font-weight: 1000;
+    font-size: 20px;
+    margin-left: 80px;
+    width: 370px;
+    height: auto;
+}
+
+#map {
+    width: 530px;
+    height: 300px;
+}
+
+.divContatos {
+    display: block;
+}
+
+.contatos {
+    display: flex;
+    flex-direction: row;
+}
+
+.mapinha {
+    margin-left: 50px;
+}
+
+.footerVerde {
+    background-color: #019d4f;
+    color: #ffc100;
+    text-align: center;
+    font-weight: 200;
+    padding: 10px;
+}
+
+.footerAmarelo {
+    background-color: #ffc100;
+    padding: 16px;
+    text-align: center;
+}
+
+.imagemFooter {
+    width: 30px;
+    height: auto;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+
+.canto-inferior-direito {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 999;
+    width: 15px;
+    height: auto;
+    background-color: #019d4f;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.canto-inferior-esquerdo {
+    position: fixed;
+    bottom: 0;
+    z-index: 999;
+    width: 60px;
+    height: auto;
+}
+
+.imageUser {
+    width: 35px;
+    height: auto;
+}
+
+/* Estilização do container dos cards */
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 40px 20px;
+}
+
+/* Estilização dos cards */
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efeito de hover nos cards */
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilização da imagem do card */
+.card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+/* Zoom na imagem ao passar o mouse */
+.card:hover .card-image {
+    transform: scale(1.1);
+}
+
+/* Conteúdo do card */
+.card-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.card-content h4 {
+    font-size: 20px;
+    color: #019d4f;
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    font-size: 16px;
+    color: #333;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    animation: fadeRotateIn 0.6s ease-in-out;
+}
+
+.modal-content {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 80%;
+    max-width: 500px;
+    position: relative;
+    animation: scaleUp 0.6s ease-in-out;
+}
+
+/* Botão de fechar */
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+}
+
+/* Imagem no modal */
+.modal-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transform: none; /* Remove qualquer transformação */
+    transition: none; /* Remove transições */
+}
+
+/* Animações únicas */
+@keyframes fadeRotateIn {
+    from {
+        opacity: 0;
+        transform: rotate(-10deg) scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: rotate(0deg) scale(1);
+    }
+}
+
+@keyframes scaleUp {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.depoimentos-modernos {
+    background-color: white; 
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+.titulo-depoimentos {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: black;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.suggestion-card {
+    background-color: white;
+    color: #666; /* cinza claro */
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+  }
+  
+
+.pergunta {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: gray;
+}
+
+
+.carousel-depoimentos {
+    background-color: #f4f4f4; 
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    box-shadow: gray 0px 0px 10px;
+}
+
+.depoimento-card {
+    display: none;
+    color: #333; 
+    opacity: 0; 
+    transform: scale(0.95); 
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.depoimento-card.active {
+    display: block;
+    opacity: 1; 
+    transform: scale(1); 
+    z-index: 1; 
+}
+
+.carousel-depoimentos .depoimento-card:not(.active) {
+    opacity: 0; /* Invisível */
+    pointer-events: none; /* Impede interação com cards inativos */
+    position: absolute; /* Remove do fluxo do layout */
+}
+
+.carousel-controles {
+    margin-top: 20px;
+}
+
+.carousel-controles button {
+    background-color: green; /* Cor amarela para combinar com o site */
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-controles button:hover {
+    background-color: #e6b800; /* Cor mais escura ao passar o mouse */
+}
+
+.resposta {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    font-weight: bold;
+}
+
+.carousel-controles {
+    margin-top: 20px;
+}
+
+.controle {
+    background: none;
+    border: 2px solid #ffeb3b;
+    color: #ffeb3b;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 50px;
+    transition:  0.3s, color 0.3s ease;
+}
+
+.controle:hover {
+    background: #ffeb3b;
+    color: #1e3c72;
+}
+
+.depoimentos-section {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #4caf50, #81c784);
+    color: white;
+}
+
+.titulo-depoimentos {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.depoimentos-carousel {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.depoimento {
+    display: none;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.depoimento.active {
+    display: block;
+    opacity: 1;
+}
+
+.depoimento-texto {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.depoimento-autor {
+    font-size: 1rem;
+    font-style: italic;
+}
+
+.carousel-controles {
+    margin-top: 20px;
+}
+
+.controle {
+    cursor: pointer;
+    font-size: 2rem;
+    margin: 0 10px;
+    color: white;
+    user-select: none;
+}
+
+.controle:hover {
+    color: #ffeb3b;
+}
+
+/* Sobre Nós Section */
+.sobre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    padding: 60px 5%;
+    background-color: #fff;
+  }
+  
+  .img-container {
+    position: relative;
+    width: 400px;
+    height: 400px;
+  }
+  
+  .img-circular {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  .decoracao {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    z-index: 2;
+  }
+  
+  .circulo-preto {
+    background-color: #000;
+    top: -20px;
+    left: -20px;
+  }
+  
+  .circulo-roxo {
+    background-color: #1B0058;
+    bottom: -30px;
+    right: -30px;
+  }
+  
+  .texto-sobre {
+    max-width: 550px;
+  }
+  
+  .texto-sobre span {
+    color: gray;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  
+  .texto-sobre h2 {
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin: 10px 0 20px;
+  }
+  
+  .texto-sobre p {
+    color: #5a5a5a;
+    line-height: 1.5;
+    margin-bottom: 25px;
+  }
+  
+  .item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+  }
+  
+  .item img {
+    width: 30px;
+    height: 30px;
+  }
+  
+
+
+.sobre-nos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.sobre-nos-texto {
+    max-width: 50%;
+}
+
+.sobre-nos-texto h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.sobre-nos-texto p {
+    font-size: 16px;
+    color: #666;
+    margin: 10px 0;
+}
+
+.sobre-nos-texto ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sobre-nos-texto ul li {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.sobre-nos-texto ul li img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.sobre-nos-imagem img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Estilo para a seção de Sugestões */
+div[style*="background-color: white;"] {
+  background-color: #f9f9f9; /* Tom claro similar ao "Perguntas e Respostas" */
+  border: 1px solid #ddd; /* Borda sutil */
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+div[style*="background-color: white;"] h2 {
+  color: #4a4a4a; /* Cor do título */
+  font-family: 'Arial', sans-serif;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+div[style*="background-color: white;"] p {
+  color: #6a6a6a; /* Cor do texto */
+  font-family: 'Arial', sans-serif;
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+#suggestion-form textarea {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  font-family: 'Arial', sans-serif;
+  font-size: 1rem;
+}
+
+#suggestion-form button {
+  background-color: #4caf50; /* Verde suave */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#suggestion-form button:hover {
+  background-color: #45a049; /* Verde mais escuro ao passar o mouse */
+}
+
+#suggestions-list h3 {
+  color: #4a4a4a;
+  font-family: 'Arial', sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+#suggestions-list p {
+  color: #6a6a6a;
+  font-family: 'Arial', sans-serif;
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+/* Estilo para a seção de Avaliação */
+div[style*="margin-top: 30px;"] {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+div[style*="margin-top: 30px;"] h2 {
+  color: #4a4a4a;
+  font-family: 'Arial', sans-serif;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+#star-rating span {
+  color: gray;
+  font-size: 2rem;
+  transition: color 0.3s;
+}
+
+#star-rating span:hover,
+#star-rating span:hover ~ span {
+  color: gold; /* Cor dourada ao passar o mouse */
+}
+
+#rating-result {
+  color: #6a6a6a;
+  font-family: 'Arial', sans-serif;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+#cards-container {
+  background-color: transparent; /* Fundo transparente por padrão */
+  padding: 0; /* Sem padding */
+  border-radius: 0; /* Sem bordas arredondadas */
+  box-shadow: none; /* Sem sombra */
+  transition: all 0.3s ease; /* Transição suave para mudanças */
+}
+
+#cards-container.has-content {
+  background-color: #fff; /* Fundo branco quando houver conteúdo */
+  padding: 15px; /* Adicione espaçamento interno */
+  border-radius: 15px; /* Bordas arredondadas */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra */
+}
